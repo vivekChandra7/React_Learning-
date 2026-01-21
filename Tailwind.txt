@@ -1,0 +1,40 @@
+# 📌 Tailwind CSS Setup (Vite + React | Node Modules)
+
+## 1️⃣ Tailwind CSS install karo
+
+npm install -D tailwindcss@3 postcss autoprefixer
+
+
+## 2️⃣ Config files generate karo
+
+
+npx tailwindcss init -p
+
+> Agar error aaye:
+
+npx tailwindcss@3 init -p
+
+
+## 3️⃣ `tailwind.config.js`
+
+
+export default {
+content: [
+"./index.html",
+"./src/**/*.{js,ts,jsx,tsx}",
+  ],
+theme: {
+extend: {},
+  },
+plugins: [],
+}
+
+
+
+## 4️⃣ Tailwind directives add karo
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
